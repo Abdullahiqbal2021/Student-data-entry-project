@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="Font Awesomne/all.min.css">
+  <title>Data Entry</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <h3 class="text-center">Enter the data of students</h3>
+    <div class="form">
+
+      <input type="text" id="name" placeholder="Enter the Name" required>
+      <input type="email" name="" id="email" placeholder="Enter the email">
+      <input type="number" placeholder="Enter the mobile no" name="" id="mobile">
+      <input type="number" placeholder="Enter the marks" name="" id="marks">
+      <button class="btn btn-primary my-1" id="add">Submit</button>
+      <button class="btn btn-danger my-2" id="clear">Clear List</button>
+
+      <div class="row search d-flex">
+        <div class="col-11 px-1">
+          <input class="w-100" type="text" placeholder="Search by Name" id="search-input" onkeyup="tableSearch()">
+        </div>
+        
+        <div class="col-1 d-flex justify-content-end">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+
+      <table id="myTable" class="table table-responsive">
+        <thead>
+          <th style="width: 57px
+          ;" class="th" scope="col">Sr #</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile no.</th>
+          <th>Marks</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tablebody">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="javascript/javascript.js"></script>
+
+
+</html>
